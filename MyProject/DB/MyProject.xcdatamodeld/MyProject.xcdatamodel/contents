@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DayDAO" representedClassName="DayDAO" syncable="YES" codeGenerationType="class">
+        <attribute name="endTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="dayRecords" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="RecordDAO" inverseName="recordOfDay" inverseEntity="RecordDAO"/>
+    </entity>
+    <entity name="RecordDAO" representedClassName="RecordDAO" syncable="YES" codeGenerationType="class">
+        <attribute name="dayId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="endTime" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="startTime" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="surname" attributeType="String"/>
+        <relationship name="recordOfDay" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="DayDAO" inverseName="dayRecords" inverseEntity="DayDAO"/>
+    </entity>
+    <elements>
+        <element name="RecordDAO" positionX="-63" positionY="-18" width="128" height="133"/>
+        <element name="DayDAO" positionX="-310.4600830078125" positionY="-153.5998992919922" width="128" height="103"/>
+    </elements>
+</model>
