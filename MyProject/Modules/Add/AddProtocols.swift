@@ -16,7 +16,7 @@ protocol AddViewInput: AnyObject {
 }
 
 protocol AddViewOutput: AnyObject {
-    func viewDidLoad()
+    func refresh()
     func tapAddToQueue(date: Date, startTime: Date, endTime: Date)
     func tapAddToLinkedList(date: Int, time: Int, name: String, surname: String)
 }

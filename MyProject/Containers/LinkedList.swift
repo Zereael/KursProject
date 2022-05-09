@@ -26,10 +26,6 @@ struct LinkedList<T> {
         return currentIndex
     }
 
-    // MARK: - Initialization
-
-    init() { }
-
     // MARK: - Public Methods
     
     // Push new node to head of list

@@ -44,7 +44,4 @@ struct Day {
         }
         _records = records
     }
-
-    // MARK: - Public Methods
-    // MARK: - Private Methods
 }

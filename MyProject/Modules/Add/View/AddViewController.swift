@@ -44,7 +44,7 @@ final class AddViewController: UIViewController {
         
         configure()
         
-        output.viewDidLoad()
+        output.refresh()
     }
 
     deinit {

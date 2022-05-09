@@ -25,7 +25,7 @@ final class AddPresenter {
 
 extension AddPresenter: AddViewOutput {
 
-    func viewDidLoad() {
+    func refresh() {
         view.startLoader()
         interactor.requestData()
     }
@@ -107,7 +107,7 @@ extension AddPresenter: AddInteractorOutput {
     func done(with text: String) {
         let completion: (() -> Void)? = { [weak self] in
             guard let self = self else { return }
-            self.viewDidLoad()
+            self.refresh()
         }
         router.showDone(with: text, completion: completion)
     }

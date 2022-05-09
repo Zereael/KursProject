@@ -43,7 +43,4 @@ struct Record {
         _name = dao.name
         _surname = dao.surname
     }
-
-    // MARK: - Public Methods
-    // MARK: - Private Methods
 }

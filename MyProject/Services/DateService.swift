@@ -9,7 +9,7 @@ import Foundation
 
 protocol IDateService {
     func timeToString(_ time: Date) -> String
-    func dateToString(_ time: Date) -> String
+    func dateToString(_ date: Date) -> String
     func nextDay(for date: Date) -> Date
     func startOfDay(_ day: Date) -> Date
     func endOfDay(_ day: Date) -> Date
